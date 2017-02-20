@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prestart": "npm run build",
     "start": "NODE_PATH=$NODE_PATH:./shared node --harmony .",
     "startdev": "nodemon index.js",
     "dev": "npm run startdev & webpack-dev-server --progress --color",
